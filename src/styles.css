@@ -1,7 +1,29 @@
-.hello {
-  color: red;
+/* ./src/styles.css - general styles of the app */
+
+* {
+  box-sizing: border-box;
 }
 
-body {
-  background-color: bisque;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0.35em;
+}
+
+a:hover {
+  color: brown;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
