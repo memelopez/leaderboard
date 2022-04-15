@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-
+    <div class="encApp">
+        <h1 class="title">Leaderboard</h1>
+        <div class="mainContent">
+            <section class="recentScores">
+                <div class="scoresTitle">
+                    <h3 class="subT">Recent Scores</h3>
+                    <button class="refresh">Refresh</button>
+                </div>
+                <ul id="scoresList"></ul>
+            </section>
+            <section class="newScore">
+                <h2 class="formTitle">Add your score</h2>
+                <form action="" id="addScore">
+                    <input type="text" name="name" id="userName" placeholder="Your name">
+                    <input type="text" name="score" id="userScore" placeholder="Your score">
+                    <button>Submit</button>
+                </form>
+            </section>
+        </div>
+    </div>
 </body>
 </html>

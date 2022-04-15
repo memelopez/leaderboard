@@ -1,7 +1,124 @@
-.hello {
-  color: red;
+/* ./src/styles.css - general styles of the app */
+* {
+  box-sizing: border-box;
 }
 
-body {
-  background-color: bisque;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0.35em;
+}
+
+a:hover {
+  color: brown;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: white;
+  border: 2.5px black solid;
+  border-radius: 0;
+  height: 30px;
+}
+
+/* resuable classes */
+
+.title {
+  font-size: 3.5em;
+  margin-bottom: 0.65em;
+}
+
+/* targeted classes */
+
+.encApp {
+  margin: 2.5em;
+}
+
+.mainContent {
+  display: flex;
+  margin: 0.65em 1.15em;
+}
+
+.recentScores {
+  width: 55%;
+  margin: 0.45em 1.5em;
+}
+
+.scoresTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.25em;
+}
+
+.subT {
+  font-size: 1.75em;
+}
+
+/* score list */
+
+#scoresList {
+  border: black solid 2px;
+  min-height: 400px;
+  margin: 0.35em 0.25em;
+  padding: 0.35em;
+}
+
+.liScore {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 0.35em;
+}
+
+ul#scoresList li:nth-child(odd) {
+  background-color: rgb(201, 199, 199);
+}
+
+.pScore {
+  font-size: 1.25em;
+}
+
+/* form to add new score */
+
+.newScore {
+  width: 40%;
+  margin: 0.45em 1.5em;
+}
+
+.formTitle {
+  font-size: 2.25em;
+  text-align: center;
+}
+
+#addScore {
+  display: flex;
+  flex-direction: column;
+  padding: 0.35em;
+}
+
+form input {
+  margin: 1.15em 0;
+  height: 35px;
+  border: black solid 2px;
+  padding-left: 1em;
+  font-size: 1.15em;
+}
+
+form button {
+  width: 25%;
+  margin-left: auto;
 }
