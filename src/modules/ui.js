@@ -10,7 +10,7 @@ export default class UI {
     li.className = 'liScore';
     const p = document.createElement('p');
     p.className = 'pScore';
-    p.textContent = `${score.name}: ${score.score}`;
+    p.textContent = score.score2str();
 
     li.appendChild(p);
     scorelist.appendChild(li);
