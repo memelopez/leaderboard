@@ -7,6 +7,6 @@ export default class Score {
   }
 
   score2str() {
-    return `Name: ${this.name} Score: ${this.score}`;
+    return `${this.name}: ${this.score}`;
   }
 }
