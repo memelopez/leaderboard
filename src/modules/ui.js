@@ -1,8 +1,5 @@
 // /src/modules/ui.js - USER INTERFACE class, deals with all modifications to the DOM
 
-// import Store from "./store";
-// import Score from "./score";
-
 export default class UI {
   static addScoreUI(score) {
     const scorelist = document.querySelector('#scoresList');
@@ -10,7 +7,7 @@ export default class UI {
     li.className = 'liScore';
     const p = document.createElement('p');
     p.className = 'pScore';
-    p.textContent = `${score.name}: ${score.score}`;
+    p.textContent = score.score2str();
 
     li.appendChild(p);
     scorelist.appendChild(li);
