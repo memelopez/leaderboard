@@ -1,18 +1,15 @@
 // /src/modules/store.js - Store Class: Encapsulates de locacl storage
 
 export default class Store {
-  static getScores() {
-    let list;
-    if (localStorage.getItem('scores') === null) {
-      list = [];
-    } else {
-      list = JSON.parse(localStorage.getItem('scores'));
+  static getGameKey() {
+    let gameKey;
+    if (localStorage.getItem('gameKey') !== null) {
+      gameKey = JSON.parse(localStorage.getItem('gameKey'));
     }
-
-    return list;
+    return gameKey;
   }
 
-  static setScores(list) {
-    localStorage.setItem('scores', JSON.stringify(list));
+  static setGameKey(key) {
+    localStorage.setItem('gameKey', JSON.stringify(key));
   }
 }
