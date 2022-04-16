@@ -1,8 +1,5 @@
 // /src/modules/ui.js - USER INTERFACE class, deals with all modifications to the DOM
 
-// import Store from "./store";
-// import Score from "./score";
-
 export default class UI {
   static addScoreUI(score) {
     const scorelist = document.querySelector('#scoresList');
