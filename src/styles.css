@@ -92,6 +92,17 @@ ul#scoresList li:nth-child(odd) {
   font-size: 1.25em;
 }
 
+.noScores {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pNoScores {
+  color: white;
+}
+
 /* form to add new score */
 
 .newScore {
